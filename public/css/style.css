@@ -7,18 +7,41 @@ body.app {
 	min-height: 100vh;
 	flex-direction: column;
 }
+
+/* ---------- */
+/* App header */
+/* ---------- */
 .sdg-logo > img {
 	max-width: 50px;
 	max-height: 50px;
 	margin-top: -15px;
 	margin-bottom: -15px;
 }
+.navbar-inverse .navbar-nav .navbar-item a {
+	color: #9d9d9d;
+}
+.navbar-inverse .navbar-nav .navbar-item a:hover,
+.navbar-inverse .navbar-nav .navbar-item a:focus {
+	color: #fff;
+	background-color: #080808;
+}
 ul.navbar-nav li.navbar-top-link a {
 	color: #f2a711;
 }
+
+/* -------- */
+/* App body */
+/* -------- */
 .app-content {
 	flex: 1;
 }
+.control-form {
+    margin-bottom: 10px;
+}
+
+/* ---------- */
+/* App footer */
+/* ---------- */
 .app-footer {
 	padding-top: 2em;
 	padding-bottom: 1em;
@@ -33,7 +56,4 @@ ul.navbar-nav li.navbar-footer a {
 ul.navbar-nav li.navbar-footer a:hover {
 	color: #fff;
 	background-color: transparent;
-}
-.zf-green, h2 a {
-	color: #68b604;
 }
