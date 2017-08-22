@@ -3,7 +3,7 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <?= $this->headTitle('SDG')->setSeparator(' - ')->setAutoEscape(false) ?>
+        <?= $this->headTitle('Smart Dragon Group')->setSeparator(' - ')->setAutoEscape(false) ?>
 
         <?= $this->headMeta()
             ->appendName('viewport', 'width=device-width, initial-scale=1.0')
@@ -45,11 +45,11 @@
                     </div>
                     <div class="collapse navbar-collapse">
                         <ul class="nav navbar-nav navbar-left">
-                            <li class="active"><a href="<?= $this->url('home') ?>">Home</a></li>
-                            <li class=""><a href="<?//= $this->url('product') ?>">Product</a></li>
+                            <li class="navbar-item"><a href="<?= $this->url('home') ?>">Home</a></li>
+                            <li class="navbar-item"><a href="<?//= $this->url('product') ?>">Product</a></li>
                         </ul>
                         <ul class="nav navbar-nav navbar-right">
-                        	<li class=""><a href="<?= $this->url('zfcuser') ?>">Login</a></li>
+                        	<li class="navbar-item"><a href="<?= $this->url('zfcuser') ?>">Login</a></li>
                         </ul>
                     </div>
                 </div>
