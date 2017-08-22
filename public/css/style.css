@@ -1,0 +1,39 @@
+body.app {
+	padding-top: 60px;
+	font-family: "Open Sans", helvetica, arial, sans-serif, monospace;
+}
+.app {
+	display: flex;
+	min-height: 100vh;
+	flex-direction: column;
+}
+.sdg-logo > img {
+	max-width: 50px;
+	max-height: 50px;
+	margin-top: -15px;
+	margin-bottom: -15px;
+}
+ul.navbar-nav li.navbar-top-link a {
+	color: #f2a711;
+}
+.app-content {
+	flex: 1;
+}
+.app-footer {
+	padding-top: 2em;
+	padding-bottom: 1em;
+	background-color: #084b6b;
+	color: #e6e0d6;
+}
+ul.navbar-nav li.navbar-footer a {
+	padding-left: 0px;
+	padding-top: 0px;
+	color: inherit;
+}
+ul.navbar-nav li.navbar-footer a:hover {
+	color: #fff;
+	background-color: transparent;
+}
+.zf-green, h2 a {
+	color: #68b604;
+}
