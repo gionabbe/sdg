@@ -1,6 +1,6 @@
 $.noty.defaults = {
-    layout: 'topRight',
-    theme: 'jiraTheme', // or 'relax'
+    layout: 'topRight', // inline, top, topLeft, topCenter, topRight, bottom, bottomLeft, bottomCenter, bottomRight, center, centerLeft, centerRight,
+    theme: 'jiraTheme', // defaultTheme, bootstrapTheme, relaxTheme, jiraTheme,
     dismissQueue: true, // If you want to use queue feature set this true
     template: '<div class="noty_message"><span class="noty_icon"></span><span class="noty_text"></span><div class="noty_close"></div></div>',
     animation: {
