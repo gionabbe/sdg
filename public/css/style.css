@@ -42,6 +42,12 @@ ul.navbar-nav li.navbar-top-link a {
 	font-size: smaller;
 	color: #fb6f08;
 }
+.user-info {
+	margin-top: 20px;
+}
+.user-info .table-responsive .table {
+	margin-bottom: 0px;
+}
 
 /* ---------- */
 /* App footer */
