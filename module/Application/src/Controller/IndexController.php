@@ -14,10 +14,10 @@ class IndexController extends AbstractActionController
 {
     public function indexAction()
     {
-//         $this->flashMessenger()->addSuccessMessage('Success message, bravo!');
-//         $this->flashMessenger()->addErrorMessage('Error with system, contact us.');
-//         $this->flashMessenger()->addInfoMessage('Info message, to do whatever...');
-//         $this->flashMessenger()->addWarningMessage('Warning message to be careful.');
+        $this->flashMessenger()->addSuccessMessage('Success message, bravo!');
+        $this->flashMessenger()->addErrorMessage('Error with system, contact us.');
+        $this->flashMessenger()->addInfoMessage('Info message, to do whatever...');
+        $this->flashMessenger()->addWarningMessage('Warning message to be careful.');
 
         return new ViewModel();
     }

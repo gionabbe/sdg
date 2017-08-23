@@ -23,7 +23,7 @@
     </dd>
 </dl>
 
-        <?php if ($ex = $this->exception->getPrevious()) : ?>
+        <?php if (($ex = $this->exception)->getPrevious()) : ?>
 <hr/>
 
 <h2>Previous exceptions:</h2>
