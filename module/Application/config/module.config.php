@@ -55,6 +55,7 @@ return [
         ],
         'template_path_stack' => [
             __DIR__ . '/../view',
+            'zfc-user' => __DIR__ . '/../view',
         ],
     ],
 ];

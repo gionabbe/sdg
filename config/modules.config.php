@@ -36,8 +36,8 @@ return [
     'ZendDeveloperTools',
     'DoctrineModule',
     'DoctrineORMModule',
-    'Application',
     'ZfcBase',
     'ZfcUser',
+    'Application',
     'FlashNotyMessenger'
 ];

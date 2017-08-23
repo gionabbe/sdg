@@ -38,6 +38,10 @@ ul.navbar-nav li.navbar-top-link a {
 .control-form {
     margin-bottom: 10px;
 }
+.zend-form .control-form ul li {
+	font-size: smaller;
+	color: #fb6f08;
+}
 
 /* ---------- */
 /* App footer */

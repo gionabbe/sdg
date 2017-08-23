@@ -40,7 +40,7 @@ $settings = array(
      *
      * Accepted values: boolean true or false
      */
-    'enable_username' => false,
+    'enable_username' => true,
 
     /**
      * Authentication Adapters
@@ -109,7 +109,7 @@ $settings = array(
      * Determines if a captcha should be utilized on the user registration form.
      * Default value is false.
      */
-    'use_registration_form_captcha' => false,
+    'use_registration_form_captcha' => true,
 
     /**
      * Form Captcha Options
