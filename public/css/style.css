@@ -48,6 +48,13 @@ ul.navbar-nav li.navbar-top-link a {
 .user-info .table-responsive .table {
 	margin-bottom: 0px;
 }
+.title-alias {
+	margin: 10px 0px;
+}
+.title-alias-divider {
+	margin-top: 10px;
+	border: 1px solid #ccc;
+}
 
 /* ---------- */
 /* App footer */
