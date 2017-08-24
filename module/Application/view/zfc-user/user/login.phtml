@@ -9,16 +9,16 @@
         $form->setAttribute('method', 'post');
         $form->setAttribute('autocomplete', 'on');
         ?>
-
-        <?php /* if ($this->flashMessenger()->setNamespace('zfcuser-login-form')->hasMessages()) :
+		<!--
+        <?php if ($this->flashMessenger()->setNamespace('zfcuser-login-form')->hasMessages()) :
             $messages = $this->flashMessenger()->setNamespace('zfcuser-login-form')->getMessages();
-            foreach ($messages as $message) { */ ?>
-                <!-- <div class="alert alert-danger"> -->
-                    <?php // echo $message; ?>
-                <!-- </div> -->
-            <?php //} ?>
-        <?php //endif; ?>
-
+            foreach ($messages as $message) { ?>
+                <div class="alert alert-danger">
+                    <?php echo $message; ?>
+                </div>
+            <?php } ?>
+        <?php endif; ?>
+         -->
         <?php echo $this->partial('_form.phtml', ['form' => $form]); ?>
 
 		<?php // echo $this->translate('Forgot password?')?>

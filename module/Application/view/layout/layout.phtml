@@ -25,9 +25,10 @@
         <?= $this->headScript()
             ->prependFile($this->basePath('js/bootstrap.min.js'))
             ->prependFile($this->basePath('js/jquery-3.1.0.min.js'))
+            ->prependFile($this->basepath('js/script.js'))
             ->prependFile($this->basepath('js/noty/jquery.noty.config.js'))
             ->prependFile($this->basepath('js/noty/jquery.noty.packaged.js'))
-            ->prependFile($this->basepath('js/script.js'))
+            ->prependFile($this->basepath('js/listgroup/listgroup.min.js'))
         ?>
     </head>
     <body class="app">
@@ -84,5 +85,8 @@
         <?php $this->flashNoty()->fire(); ?>
 
         <?= $this->inlineScript() ?>
+        <script type="text/javascript">
+		// $(document).off('.data-api');
+        </script>
     </body>
 </html>
