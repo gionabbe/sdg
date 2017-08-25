@@ -1,15 +1,15 @@
 <?php echo $this->partial('_user.phtml'); ?>
 
 <div class="user-info">
-	<div class="row">
-		<div class="col-md-6">
-			<div class="panel panel-default">
-				<div class="panel-heading">
-					<div class="panel-title"><?php echo $this->translate('User Infomation')?></div>
-				</div>
-				<div class="panel-body">
-					<div class="table-responsive">
-						<table class="table table-striped table-bordered table-hover">
+    <div class="row">
+        <div class="col-md-6">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <div class="panel-title"><?php echo $this->translate('User Infomation')?></div>
+                </div>
+                <div class="panel-body">
+                    <div class="table-responsive">
+                        <table class="table table-striped table-bordered table-hover">
                           <tr>
                             <td><?php echo $this->translate('Id') ?></td>
                             <td><?php echo $this->zfcUserIdentity()->getId() ?></td>
@@ -30,10 +30,10 @@
                             <td><?php echo $this->translate('Status') ?></td>
                             <td><?php echo $this->zfcUserIdentity()->getState() ?></td>
                           </tr>
-                      	</table>
-                	</div>
-				</div>
-			</div>
-		</div>
-	</div>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>

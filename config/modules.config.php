@@ -39,5 +39,6 @@ return [
     'ZfcBase',
     'ZfcUser',
     'Application',
-    'FlashNotyMessenger'
+    'FlashNotyMessenger',
+    'Soflomo\Mail'
 ];

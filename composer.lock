@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "06563c0c52dfdf12d7e2afc9639aef66",
+    "content-hash": "bd326d0d61fbd7f477b42e1cf2fec2a1",
     "packages": [
         {
             "name": "bjyoungblood/bjy-profiler",
@@ -868,6 +868,63 @@
                 "orm"
             ],
             "time": "2017-08-18T19:17:35+00:00"
+        },
+        {
+            "name": "eye4web/eye4web-zfc-user-forgot-password",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Eye4web/Eye4webZfcUserForgotPassword.git",
+                "reference": "50f084d8cb2f63f9cc3d1c0dda2575dc2f291f3d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Eye4web/Eye4webZfcUserForgotPassword/zipball/50f084d8cb2f63f9cc3d1c0dda2575dc2f291f3d",
+                "reference": "50f084d8cb2f63f9cc3d1c0dda2575dc2f291f3d",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.4",
+                "zf-commons/zfc-user": ">=1.2.0"
+            },
+            "require-dev": {
+                "codeclimate/php-test-reporter": "dev-master",
+                "phpunit/phpunit": "4.*",
+                "soflomo/mail": "~0.3",
+                "squizlabs/php_codesniffer": "1.5.*",
+                "zendframework/zend-captcha": "~2.1"
+            },
+            "suggest": {
+                "soflomo/mail": "Email transporter"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Eye4web\\ZfcUser\\ForgotPassword": "src/"
+                },
+                "classmap": [
+                    "./src/Eye4web/ZfcUser/ForgotPassword/Module.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Nikolaj Løvenhardt Petersen",
+                    "email": "np@eye4web.dk"
+                }
+            ],
+            "description": "Forgot password for ZfcUser",
+            "homepage": "https://github.com/Eye4web/Eye4webZfcUserForgotPassword",
+            "keywords": [
+                "forgot-password",
+                "zf2",
+                "zfc-user",
+                "zfcuser"
+            ],
+            "time": "2016-07-29T22:23:26+00:00"
         },
         {
             "name": "http-interop/http-middleware",
@@ -2419,6 +2476,58 @@
             "description": "Library that helps with managing the version number of Git-hosted PHP projects",
             "homepage": "https://github.com/sebastianbergmann/version",
             "time": "2016-10-03T07:35:21+00:00"
+        },
+        {
+            "name": "soflomo/mail",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/juriansluiman/Soflomo-Mail.git",
+                "reference": "efaa760592cb7539a8f4c938f43b561794b01a6f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/juriansluiman/Soflomo-Mail/zipball/efaa760592cb7539a8f4c938f43b561794b01a6f",
+                "reference": "efaa760592cb7539a8f4c938f43b561794b01a6f",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^5.6 || ^7.0",
+                "zendframework/zend-mail": "^2.0 || ^3.0",
+                "zendframework/zend-servicemanager": "^2.7 || ^3.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^5.0",
+                "squizlabs/php_codesniffer": "^2.0",
+                "zendframework/zendframework": "^2.7 || ^3.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Soflomo\\Mail\\": "src/"
+                },
+                "classmap": [
+                    "./Module.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Jurian Sluiman",
+                    "email": "jurian@soflomo.com",
+                    "homepage": "http://soflomo.com"
+                }
+            ],
+            "description": "Module to to ease the use of sending e-mail messages in Zend Framework 2",
+            "homepage": "https://github.com/Soflomo/Mail",
+            "keywords": [
+                "mail",
+                "zf2"
+            ],
+            "time": "2017-03-09T08:23:32+00:00"
         },
         {
             "name": "symfony/console",
@@ -6796,7 +6905,9 @@
         "zendframework/zend-component-installer": 20,
         "zf-commons/zfc-base": 20,
         "doctrine/doctrine-module": 20,
-        "doctrine/doctrine-orm-module": 20
+        "doctrine/doctrine-orm-module": 20,
+        "eye4web/eye4web-zfc-user-forgot-password": 20,
+        "soflomo/mail": 20
     },
     "prefer-stable": true,
     "prefer-lowest": false,

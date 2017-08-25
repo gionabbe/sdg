@@ -56,6 +56,14 @@ ul.navbar-nav li.navbar-top-link a {
 	border: 1px solid #ccc;
 }
 
+/* List */
+.list-group > a.list-group-item:hover,
+.list-group > a.list-group-item:focus {
+	color: #fff;
+	background-color: #337ab7;
+	border-color: #337ab7
+}
+
 /* ---------- */
 /* App footer */
 /* ---------- */

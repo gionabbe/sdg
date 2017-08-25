@@ -8,6 +8,7 @@
 namespace Application;
 
 use Zend\Mvc\MvcEvent;
+
 // use ZfcUser\Form\Register;
 // use ZfcUser\Form\RegisterFilter;
 
@@ -23,7 +24,7 @@ class Module
     public function onBootstrap(MvcEvent $e)
     {
         $events = $e->getApplication()->getEventManager()->getSharedManager();
-        $events->attach('ZfcUser\Form\Base','init', function($e) {
+        $events->attach('ZfcUser\Form\Base', 'init', function ($e) {
             $form = $e->getTarget();
             // Do what you please with the form instance ($form)
             /* $form = new Register();
@@ -48,7 +49,7 @@ class Module
                 ),
             )); */
         });
-        $events->attach('ZfcUser\Form\RegisterFilter','init', function($e) {
+        $events->attach('ZfcUser\Form\RegisterFilter', 'init', function ($e) {
             $filter = $e->getTarget();
             // Do what you please with the filter instance ($filter)
             /* $filter = new RegisterFilter();

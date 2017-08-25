@@ -5,7 +5,7 @@
  * If you have a ./config/autoload/ directory set up for your project, you can
  * drop this config file in it and change the values as you wish.
  */
-$settings = array(
+$settings = [
     /**
      * Zend\Db\Adapter\Adapter DI Alias
      *
@@ -50,7 +50,7 @@ $settings = array(
      * Default value: array containing 'ZfcUser\Authentication\Adapter\Db' with priority 100
      * Accepted values: array containing services that implement 'ZfcUser\Authentication\Adapter\ChainableAdapter'
      */
-    'auth_adapters' => array( 100 => 'ZfcUser\Authentication\Adapter\Db' ),
+    'auth_adapters' => [ 100 => 'ZfcUser\Authentication\Adapter\Db' ],
 
     /**
      * Enable Display Name
@@ -71,7 +71,7 @@ $settings = array(
      * Default value: array containing 'email'
      * Accepted values: array containing one or more of: email, username
      */
-    'auth_identity_fields' => array( 'email' ),
+    'auth_identity_fields' => [ 'email' ],
 
     /**
      * Login form timeout
@@ -118,14 +118,14 @@ $settings = array(
      * this to configure which Zend\Captcha adapter to use, and the options to
      * pass to it. The default uses the Figlet captcha.
      */
-    'form_captcha_options' => array(
+    'form_captcha_options' => [
         'class'   => 'figlet',
-        'options' => array(
+        'options' => [
             'wordLen'    => 5,
             'expiration' => 300,
             'timeout'    => 300,
-        ),
-    ),
+        ],
+    ],
 
     /**
      * Use Redirect Parameter If Present
@@ -137,11 +137,11 @@ $settings = array(
     'use_redirect_parameter_if_present' => true,
 
     /**
-	 * Sets the view template for the user login widget
-	 *
-	 * Default value: 'zfc-user/user/login.phtml'
+     * Sets the view template for the user login widget
+     *
+     * Default value: 'zfc-user/user/login.phtml'
      * Accepted values: string path to a view script
-	 */
+     */
     'user_login_widget_view_template' => 'zfc-user/user/login.phtml',
 
     /**
@@ -210,7 +210,7 @@ $settings = array(
      * Include null if you want user's with no state to login as well.
      * Allowed value types: null and integer
      */
-    'allowed_login_states' => array( null, 1 ),
+    'allowed_login_states' => [ null, 1 ],
 
     /**
      * User table name
@@ -220,16 +220,16 @@ $settings = array(
     /**
      * End of ZfcUser configuration
      */
-);
+];
 
 /**
  * You do not need to edit below this line
  */
-return array(
+return [
     'zfcuser' => $settings,
-    'service_manager' => array(
-        'aliases' => array(
-            'zfcuser_zend_db_adapter' => (isset($settings['zend_db_adapter'])) ? $settings['zend_db_adapter']: 'Zend\Db\Adapter\Adapter',
-        ),
-    ),
-);
+    'service_manager' => [
+        'aliases' => [
+            'zfcuser_zend_db_adapter' => (isset($settings['zend_db_adapter'])) ? $settings['zend_db_adapter'] : 'Zend\Db\Adapter\Adapter',
+        ],
+    ],
+];

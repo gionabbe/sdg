@@ -33,7 +33,9 @@
         "doctrine/doctrine-module": "dev-master",
         "doctrine/doctrine-orm-module": "dev-master",
         "bjyoungblood/bjy-profiler": "^1.1",
-        "tasmaniski/zend-flash-noty-messenger": "^2.0"
+        "tasmaniski/zend-flash-noty-messenger": "^2.0",
+        "eye4web/eye4web-zfc-user-forgot-password": "dev-master",
+        "soflomo/mail": "dev-master"
     },
     "autoload": {
         "psr-4": {
