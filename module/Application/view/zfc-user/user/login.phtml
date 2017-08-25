@@ -22,13 +22,13 @@
         <?php echo $this->partial('_form.phtml', ['form' => $form]); ?>
 
 		<?php // echo $this->translate('Forgot password?')?>
-		<!-- <a href="<?php echo $this->url('zfcuser/changepassword') . ($this->redirect ? '?redirect='.$this->escapeUrl($this->redirect) : '') ?>"><?php echo $this->translate('Forgot password?'); ?></a>
-
-		<hr> -->
+		<a href="<?php echo $this->url('zfcuser/forgotpassword') . ($this->redirect ? '?redirect='.$this->escapeUrl($this->redirect) : '') ?>"><?php echo $this->translate('Forgot password?'); ?></a>
+        <!-- <a href="<?php // echo $this->url('zfcuser/forgotpassword') ?>"><?php // echo $this->translate('Forgot password?') ?></a> -->
+		<hr>
 
         <?php if ($this->enableRegistration) : ?>
-        <?php echo $this->translate('Not registered?'); ?> <a href="<?php echo $this->url('zfcuser/register') . ($this->redirect ? '?redirect='.$this->escapeUrl($this->redirect) : '') ?>"><?php echo $this->translate('Sign up!'); ?></a>
+        <?php echo $this->translate('Not registered?'); ?>
+        <a href="<?php echo $this->url('zfcuser/register') . ($this->redirect ? '?redirect='.$this->escapeUrl($this->redirect) : '') ?>"><?php echo $this->translate('Sign up!'); ?></a>
         <?php endif; ?>
 	</div>
 </div>
-
