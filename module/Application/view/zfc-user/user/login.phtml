@@ -27,11 +27,6 @@
 
         <hr>
 
-        <?php // echo $this->translate('Forgot password?')?>
-        <a href="<?php echo $this->url('zfcuser/forgotpassword') . ($this->redirect ? '?redirect='.$this->escapeUrl($this->redirect) : '') ?>"><?php echo $this->translate('Forgot password?'); ?></a>
-        <!-- <a href="<?php // echo $this->url('zfcuser/forgotpassword') ?>"><?php // echo $this->translate('Forgot password?') ?></a> -->
-        <hr>
-
         <?php if ($this->enableRegistration) : ?>
         <?php echo $this->translate('Not registered?'); ?>
         <a href="<?php echo $this->url('zfcuser/register') . ($this->redirect ? '?redirect='.$this->escapeUrl($this->redirect) : '') ?>"><?php echo $this->translate('Sign up!'); ?></a>

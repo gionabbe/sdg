@@ -38,7 +38,8 @@ return [
     'DoctrineORMModule',
     'ZfcBase',
     'ZfcUser',
+    'Eye4web\ZfcUser\ForgotPassword',
     'Application',
     'FlashNotyMessenger',
-    'Soflomo\Mail'
+    // 'Soflomo\Mail',
 ];
